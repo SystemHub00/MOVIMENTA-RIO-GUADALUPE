@@ -346,6 +346,85 @@ TEMPLATE_WIZARD = r'''
             margin-bottom: 4px;
         }
 
+        .benefits-slider {
+            display: grid;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .benefits-viewport {
+            position: relative;
+            min-height: 76px;
+            overflow: hidden;
+        }
+
+        .benefit-slide {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 12px;
+            border-radius: 16px;
+            background: var(--cor-clara);
+            color: var(--cor-principal);
+            font-size: 0.98rem;
+            font-weight: 800;
+            line-height: 1.45;
+            text-align: center;
+            opacity: 0;
+            transform: translateX(18px);
+            transition: opacity 0.28s ease, transform 0.28s ease;
+            pointer-events: none;
+        }
+
+        .benefit-slide.ativo {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+
+        .benefits-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .benefits-nav {
+            min-width: 44px;
+            min-height: 44px;
+            border: none;
+            border-radius: 999px;
+            background: #fff;
+            color: var(--cor-principal);
+            box-shadow: 0 6px 16px rgba(17, 85, 204, 0.14);
+            font: inherit;
+            font-size: 1.1rem;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .benefits-dots {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .benefits-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 999px;
+            background: #b7cbf4;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .benefits-dot.ativo {
+            background: var(--cor-principal);
+            transform: scale(1.2);
+        }
+
         .timeline-card {
             padding: 14px 10px;
             background: linear-gradient(180deg, #1155cc 0%, #4f86ea 100%);
@@ -988,31 +1067,40 @@ TEMPLATE_WIZARD = r'''
                             <div class="hero-highlights">
                                 <div class="hero-highlight">
                                     <strong>CURSOS DISPONÍVEIS</strong>
-                                        AGENTE DE DEFESA AMBIENTAL<br>
-                                        MARKETING DIGITAL<br>
-                                        GARÇOM<br>
-                                        RECEPCIONISTA<br>
-                                        ASSISTENTE DE LOGÍSTICA<br>
-                                        INTELIGÊNCIA ARTIFICIAL<br>
-                                        ORIENTADOR DE HOTELARIA<br>
-                                        CAMAREIRO<br>
-                                        MONITOR DE LAZER E RECREAÇÃO<br>
-                                        SOCIAL MEDIA<br>
-                                        AUXILIAR DE COZINHA<br>
-                                        AGENTE DE TURISMO CORPORATIVO<br>
-                                        ATENDENTE DE SALÃO PARA CAFÉ DA MANHÃ<br>
-                                        CUMIN
+                                        🛡️ AGENTE DE DEFESA AMBIENTAL<br>
+                                        🚀 MARKETING DIGITAL<br>
+                                        🤵 GARÇOM<br>
+                                        🛎️ RECEPCIONISTA<br>
+                                        📦 ASSISTENTE DE LOGÍSTICA<br>
+                                        🤖 INTELIGÊNCIA ARTIFICIAL<br>
+                                        🏨 ORIENTADOR DE HOTELARIA<br>
+                                        🧹 CAMAREIRO<br>
+                                        🎈 MONITOR DE LAZER E RECREAÇÃO<br>
+                                        🤳 SOCIAL MEDIA<br>
+                                        🔪 AUXILIAR DE COZINHA<br>
+                                        ✈️ AGENTE DE TURISMO CORPORATIVO<br>
+                                        ☕ ATENDENTE DE SALÃO PARA CAFÉ DA MANHÃ<br>
+                                        🍽️ CUMIN
                                 </div>
                                 <div class="hero-highlight">
                                     <strong>BENEFÍCIOS</strong>
-                                    100% Gratuito<br>
-                                    Certificado de Conclusão<br>
-                                    Aulas presenciais com instrutores qualificados<br>
-                                    Conteúdo EAD complementar para estudar em casa<br>
-                                    Preparação para o mercado de trabalho<br>
-                                    Material didático incluso<br>
-                                    Networking com outros profissionais<br>
-                                    Apoio na elaboração de currículo
+                                    <div class="benefits-slider" data-benefits-slider>
+                                        <div class="benefits-viewport">
+                                            <div class="benefit-slide ativo">100% Gratuito</div>
+                                            <div class="benefit-slide">Certificado de Conclusão</div>
+                                            <div class="benefit-slide">Aulas presenciais com instrutores qualificados</div>
+                                            <div class="benefit-slide">Conteúdo EAD complementar para estudar em casa</div>
+                                            <div class="benefit-slide">Preparação para o mercado de trabalho</div>
+                                            <div class="benefit-slide">Material didático incluso</div>
+                                            <div class="benefit-slide">Networking com outros profissionais</div>
+                                            <div class="benefit-slide">Apoio na elaboração de currículo</div>
+                                        </div>
+                                        <div class="benefits-controls">
+                                            <button type="button" class="benefits-nav" data-benefits-prev aria-label="Benefício anterior">‹</button>
+                                            <div class="benefits-dots" data-benefits-dots></div>
+                                            <button type="button" class="benefits-nav" data-benefits-next aria-label="Próximo benefício">›</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="hero-highlight">
                                     <strong>MOVIMENTA RIO</strong>
@@ -1212,12 +1300,12 @@ TEMPLATE_WIZARD = r'''
 
                             <div class="review-box full">
                                 <div class="review-info-text" style="margin-bottom:10px; color:#2f5fb4; font-size:0.98rem; text-align:left;">
-                                    <strong>Elegibilidade:</strong> Este curso é destinado a pessoas com 18 anos ou mais interessadas em qualificação profissional na área elétrica.
+                                    <strong>Elegibilidade:</strong> Este curso é destinado a pessoas com 16 anos ou mais interessadas em qualificação profissional.
                                 </div>
                                 <label class="review-check" for="confirma_dados">
                                     <input type="checkbox" id="confirma_dados" name="confirma_dados" value="sim" {% if form_data.get('confirma_dados') %}checked{% endif %}>
                                     <span>
-                                        Confirmo que tenho 18 anos ou mais e interesse em participar do curso selecionado.<br>
+                                        Confirmo que tenho 16 anos ou mais e interesse em participar do curso selecionado.<br>
                                         Todas as informações fornecidas são verdadeiras e estou de acordo com os termos de participação.<br>
                                         Autorizo o uso dos meus dados para fins de inscrição e contato relacionado ao curso.<br>
                                         Também autorizo o uso da minha imagem para divulgação nos canais de comunicação e redes sociais do projeto e da Prefeitura do Rio de Janeiro.
@@ -1260,6 +1348,7 @@ TEMPLATE_WIZARD = r'''
             const panels = Array.from(document.querySelectorAll('[data-step]'));
             const labels = Array.from(document.querySelectorAll('[data-step-label]'));
             const reviewTargets = Array.from(document.querySelectorAll('[data-review]'));
+            const benefitsSliders = Array.from(document.querySelectorAll('[data-benefits-slider]'));
             const localOptions = {{ local_options|tojson }};
             const courseCatalog = {{ course_catalog|tojson }};
             const courseOptions = {{ course_options|tojson }};
@@ -1297,6 +1386,77 @@ TEMPLATE_WIZARD = r'''
 
             function somenteDigitos(valor) {
                 return (valor || '').replace(/\D/g, '');
+            }
+
+            function initBenefitsSlider(slider) {
+                const slides = Array.from(slider.querySelectorAll('.benefit-slide'));
+                const dotsHost = slider.querySelector('[data-benefits-dots]');
+                const prevButton = slider.querySelector('[data-benefits-prev]');
+                const nextButton = slider.querySelector('[data-benefits-next]');
+
+                if (!slides.length || !dotsHost || !prevButton || !nextButton) {
+                    return;
+                }
+
+                let currentIndex = slides.findIndex(function(slide) {
+                    return slide.classList.contains('ativo');
+                });
+                let intervalId;
+
+                if (currentIndex < 0) {
+                    currentIndex = 0;
+                }
+
+                const dots = slides.map(function(_, index) {
+                    const dot = document.createElement('button');
+                    dot.type = 'button';
+                    dot.className = 'benefits-dot';
+                    dot.setAttribute('aria-label', 'Ir para benefício ' + (index + 1));
+                    dot.addEventListener('click', function() {
+                        mostrarSlide(index);
+                        reiniciarAutoSlide();
+                    });
+                    dotsHost.appendChild(dot);
+                    return dot;
+                });
+
+                function mostrarSlide(index) {
+                    currentIndex = (index + slides.length) % slides.length;
+                    slides.forEach(function(slide, slideIndex) {
+                        slide.classList.toggle('ativo', slideIndex === currentIndex);
+                    });
+                    dots.forEach(function(dot, dotIndex) {
+                        dot.classList.toggle('ativo', dotIndex === currentIndex);
+                    });
+                }
+
+                function reiniciarAutoSlide() {
+                    window.clearInterval(intervalId);
+                    intervalId = window.setInterval(function() {
+                        mostrarSlide(currentIndex + 1);
+                    }, 3200);
+                }
+
+                prevButton.addEventListener('click', function() {
+                    mostrarSlide(currentIndex - 1);
+                    reiniciarAutoSlide();
+                });
+
+                nextButton.addEventListener('click', function() {
+                    mostrarSlide(currentIndex + 1);
+                    reiniciarAutoSlide();
+                });
+
+                slider.addEventListener('mouseenter', function() {
+                    window.clearInterval(intervalId);
+                });
+
+                slider.addEventListener('mouseleave', function() {
+                    reiniciarAutoSlide();
+                });
+
+                mostrarSlide(currentIndex);
+                reiniciarAutoSlide();
             }
 
             function mostrarPasso(step) {
@@ -1383,7 +1543,7 @@ TEMPLATE_WIZARD = r'''
                 if (monthDiff < 0 || (monthDiff === 0 && hoje.getDate() < data.getDate())) {
                     idade -= 1;
                 }
-                return idade >= 18 && idade <= 90;
+                return idade >= 16 && idade <= 90;
             }
 
             function validarCep(cep) {
@@ -1590,7 +1750,7 @@ TEMPLATE_WIZARD = r'''
 
             function validarNascimento() {
                 if (!idadePermitida(nascimentoInput.value)) {
-                    setError('nascimento', 'Idade permitida: de 18 até 90 anos.');
+                    setError('nascimento', 'Idade permitida: de 16 até 90 anos.');
                     return false;
                 }
                 setError('nascimento', '');
@@ -1846,6 +2006,7 @@ TEMPLATE_WIZARD = r'''
             aplicarLocal(localSelect.value);
             aplicarCurso(courseSelect.value);
             aplicarOpcaoCurso(optionInput.value);
+            benefitsSliders.forEach(initBenefitsSlider);
             syncReview();
             mostrarPasso(stepOrder.includes(startStep) ? startStep : 'index');
         });
@@ -2296,7 +2457,7 @@ def idade_aceita(nascimento):
     idade = hoje.year - data_nascimento.year
     if (hoje.month, hoje.day) < (data_nascimento.month, data_nascimento.day):
         idade -= 1
-    return 18 <= idade <= 90
+    return 16 <= idade <= 90
 
 
 def whatsapp_valido(whatsapp):
@@ -2338,7 +2499,7 @@ def validate_form_data(form_data):
         errors["cpf"] = "CPF inválido. Verifique e digite novamente."
 
     if not idade_aceita(form_data["nascimento"]):
-        errors["nascimento"] = "Idade permitida: de 18 até 90 anos."
+        errors["nascimento"] = "Idade permitida: de 16 até 90 anos."
 
     if not whatsapp_valido(form_data["whatsapp"]):
         errors["whatsapp"] = "Informe um WhatsApp com DDD válido do Brasil."
