@@ -339,6 +339,10 @@ TEMPLATE_WIZARD = r'''
             font-weight: 700;
         }
 
+        .hero-highlight--courses {
+            text-align: left;
+        }
+
         .hero-highlight strong {
             display: block;
             color: var(--cor-principal);
@@ -1065,7 +1069,7 @@ TEMPLATE_WIZARD = r'''
                                 Cursos de qualificação profissional oferecidos pela Prefeitura do Rio de Janeiro. Invista no seu futuro sem gastar nada!
                             </p>
                             <div class="hero-highlights">
-                                <div class="hero-highlight">
+                                <div class="hero-highlight hero-highlight--courses">
                                     <strong>CURSOS DISPONÍVEIS</strong>
                                         🛡️ AGENTE DE DEFESA AMBIENTAL<br>
                                         🚀 MARKETING DIGITAL<br>
