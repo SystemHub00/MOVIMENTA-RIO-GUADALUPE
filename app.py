@@ -2453,7 +2453,7 @@ def confirmacao():
     if not protocolo:
         return redirect(url_for("home"))
 
-    home_url = "https://educatech-criacao-de-marcas-e-logomarcas.onrender.com"
+    home_url = "https://movimenta-rio-guadalupe.onrender.com"
 
     return render_template_string(
         TEMPLATE_CONFIRMACAO,
