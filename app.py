@@ -135,6 +135,18 @@ TEMPLATE_WIZARD = r'''
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/assistant.css">
     <link href="https://fonts.googleapis.com/css2?family=Wise:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2008632536670997');
+        fbq('track', 'PageView');
+    </script>
     <style>
         :root {
             --cor-principal: #1155cc;
@@ -1038,6 +1050,9 @@ TEMPLATE_WIZARD = r'''
     </style>
 </head>
 <body data-start-step="{{ current_step }}">
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2008632536670997&ev=PageView&noscript=1"
+    /></noscript>
     <script src="/static/assistant.js"></script>
     <header class="main-header">
         <div class="header-logos">
@@ -1070,7 +1085,7 @@ TEMPLATE_WIZARD = r'''
                             </p>
                             <div class="hero-highlights">
                                 <div class="hero-highlight hero-highlight--courses">
-                                    <strong>CURSOS DISPONÍVEIS</strong>
+                                    <strong>CURSOS DISPONÍVEIS:</strong>
                                         🛡️ AGENTE DE DEFESA AMBIENTAL<br>
                                         🚀 MARKETING DIGITAL<br>
                                         🤵 GARÇOM<br>
@@ -2030,6 +2045,18 @@ TEMPLATE_CONFIRMACAO = r'''
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/assistant.css">
     <link href="https://fonts.googleapis.com/css2?family=Wise:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2008632536670997');
+        fbq('track', 'PageView');
+    </script>
     <style>
         :root {
             --cor-principal: #1155cc;
@@ -2339,6 +2366,9 @@ TEMPLATE_CONFIRMACAO = r'''
     </style>
 </head>
 <body>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2008632536670997&ev=PageView&noscript=1"
+    /></noscript>
     <script src="/static/assistant.js"></script>
     <header class="main-header">
         <div class="header-logos">
