@@ -27,10 +27,7 @@ VALID_DDDS = {
     "91", "92", "93", "94", "95", "96", "97", "98", "99",
 }
 LOCAL_OPTIONS = [
-    {
-        "id": "1",
-        "nome": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE",
-    },
+    {"id": "1", "nome": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE"},
 ]
 
 COURSE_CATALOG = [
@@ -50,26 +47,140 @@ COURSE_CATALOG = [
     {"id": "14", "local_id": "1", "nome": "CUMIN"},
 ]
 
-COURSE_OPTIONS = [
-    {"id": "1", "local_id": "1", "curso_id": "1", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "AGENTE DE DEFESA AMBIENTAL", "turma": "AGENTE DE DEFESA AMBIENTAL - TURMA 06", "dias_aula": "Segunda e Quarta", "horario": "10h até 12h", "data_inicio": "04/05/2026", "encerramento": "03/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "2", "local_id": "1", "curso_id": "2", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "MARKETING DIGITAL", "turma": "MARKETING DIGITAL - TURMA 15", "dias_aula": "Segunda e Quarta", "horario": "10h até 12h", "data_inicio": "04/05/2026", "encerramento": "03/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "3", "local_id": "1", "curso_id": "3", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "GARÇOM", "turma": "GARÇOM - TURMA 13", "dias_aula": "Segunda e Quarta", "horario": "10h até 12h", "data_inicio": "04/05/2026", "encerramento": "03/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "4", "local_id": "1", "curso_id": "4", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "RECEPCIONISTA", "turma": "RECEPCIONISTA - TURMA 03", "dias_aula": "Segunda e Quarta", "horario": "13h até 15h", "data_inicio": "04/05/2026", "encerramento": "03/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "5", "local_id": "1", "curso_id": "5", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "ASSISTENTE DE LOGÍSTICA", "turma": "ASSISTENTE DE LOGÍSTICA - TURMA 14", "dias_aula": "Segunda e Quarta", "horario": "13h até 15h", "data_inicio": "04/05/2026", "encerramento": "03/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "6", "local_id": "1", "curso_id": "5", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "ASSISTENTE DE LOGÍSTICA", "turma": "ASSISTENTE DE LOGÍSTICA - TURMA 15", "dias_aula": "Segunda e Quarta", "horario": "13h até 15h", "data_inicio": "04/05/2026", "encerramento": "03/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "7", "local_id": "1", "curso_id": "5", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "ASSISTENTE DE LOGÍSTICA", "turma": "ASSISTENTE DE LOGÍSTICA - TURMA 16", "dias_aula": "Segunda e Quarta", "horario": "16h até 18h", "data_inicio": "04/05/2026", "encerramento": "03/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "8", "local_id": "1", "curso_id": "6", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "INTELIGÊNCIA ARTIFICIAL", "turma": "INTELIGÊNCIA ARTIFICIAL - TURMA 13", "dias_aula": "Segunda e Quarta", "horario": "16h até 18h", "data_inicio": "04/05/2026", "encerramento": "03/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "9", "local_id": "1", "curso_id": "7", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "ORIENTADOR DE HOTELARIA", "turma": "ORIENTADOR DE HOTELARIA - TURMA 08", "dias_aula": "Segunda e Quarta", "horario": "16h até 18h", "data_inicio": "04/05/2026", "encerramento": "03/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "10", "local_id": "1", "curso_id": "8", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "CAMAREIRO", "turma": "CAMAREIRO - TURMA 10", "dias_aula": "Terça e Quinta", "horario": "10h até 12h", "data_inicio": "05/05/2026", "encerramento": "04/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "11", "local_id": "1", "curso_id": "8", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "CAMAREIRO", "turma": "CAMAREIRO - TURMA 11", "dias_aula": "Terça e Quinta", "horario": "10h até 12h", "data_inicio": "05/05/2026", "encerramento": "04/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "12", "local_id": "1", "curso_id": "9", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "MONITOR DE LAZER E RECREAÇÃO", "turma": "MONITOR DE LAZER E RECREAÇÃO - TURMA 06", "dias_aula": "Terça e Quinta", "horario": "10h até 12h", "data_inicio": "05/05/2026", "encerramento": "04/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "13", "local_id": "1", "curso_id": "9", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "MONITOR DE LAZER E RECREAÇÃO", "turma": "MONITOR DE LAZER E RECREAÇÃO - TURMA 07", "dias_aula": "Terça e Quinta", "horario": "13h até 15h", "data_inicio": "05/05/2026", "encerramento": "04/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "14", "local_id": "1", "curso_id": "10", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "SOCIAL MEDIA", "turma": "SOCIAL MEDIA - TURMA 12", "dias_aula": "Terça e Quinta", "horario": "13h até 15h", "data_inicio": "05/05/2026", "encerramento": "04/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "15", "local_id": "1", "curso_id": "11", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "AUXILIAR DE COZINHA", "turma": "AUXILIAR DE COZINHA - TURMA 14", "dias_aula": "Terça e Quinta", "horario": "13h até 15h", "data_inicio": "05/05/2026", "encerramento": "04/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "16", "local_id": "1", "curso_id": "12", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "AGENTE DE TURISMO CORPORATIVO", "turma": "AGENTE DE TURISMO CORPORATIVO - TURMA 03", "dias_aula": "Terça e Quinta", "horario": "16h até 18h", "data_inicio": "05/05/2026", "encerramento": "04/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "17", "local_id": "1", "curso_id": "13", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "ATENDENTE DE SALÃO PARA CAFÉ DA MANHÃ", "turma": "ATENDENTE DE SALÃO PARA CAFÉ DA MANHÃ - TURMA 05", "dias_aula": "Terça e Quinta", "horario": "16h até 18h", "data_inicio": "05/05/2026", "encerramento": "04/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
-    {"id": "18", "local_id": "1", "curso_id": "14", "local": "ASSEMBLEIA DE DEUS FILIAL MARECHAL HERMES - GUADALUPE", "curso": "CUMIN", "turma": "CUMIN - TURMA 12", "dias_aula": "Terça e Quinta", "horario": "16h até 18h", "data_inicio": "05/05/2026", "encerramento": "04/06/2026", "endereco_curso": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370"},
+TURMA_OPTIONS = [
+    {"id": "1", "local_id": "1", "curso_id": "1", "turma_codigo": "06", "agenda_id": "1", "periodo_id": "1", "encerramento_id": "1", "endereco_id": "1"},
+    {"id": "2", "local_id": "1", "curso_id": "2", "turma_codigo": "15", "agenda_id": "2", "periodo_id": "2", "encerramento_id": "2", "endereco_id": "2"},
+    {"id": "3", "local_id": "1", "curso_id": "3", "turma_codigo": "13", "agenda_id": "3", "periodo_id": "3", "encerramento_id": "3", "endereco_id": "3"},
+    {"id": "4", "local_id": "1", "curso_id": "4", "turma_codigo": "03", "agenda_id": "4", "periodo_id": "4", "encerramento_id": "4", "endereco_id": "4"},
+    {"id": "5", "local_id": "1", "curso_id": "5", "turma_codigo": "14", "agenda_id": "5", "periodo_id": "5", "encerramento_id": "5", "endereco_id": "5"},
+    {"id": "6", "local_id": "1", "curso_id": "5", "turma_codigo": "15", "agenda_id": "6", "periodo_id": "6", "encerramento_id": "6", "endereco_id": "6"},
+    {"id": "7", "local_id": "1", "curso_id": "5", "turma_codigo": "16", "agenda_id": "7", "periodo_id": "7", "encerramento_id": "7", "endereco_id": "7"},
+    {"id": "8", "local_id": "1", "curso_id": "6", "turma_codigo": "13", "agenda_id": "8", "periodo_id": "8", "encerramento_id": "8", "endereco_id": "8"},
+    {"id": "9", "local_id": "1", "curso_id": "7", "turma_codigo": "08", "agenda_id": "9", "periodo_id": "9", "encerramento_id": "9", "endereco_id": "9"},
+    {"id": "10", "local_id": "1", "curso_id": "8", "turma_codigo": "10", "agenda_id": "10", "periodo_id": "10", "encerramento_id": "10", "endereco_id": "10"},
+    {"id": "11", "local_id": "1", "curso_id": "8", "turma_codigo": "11", "agenda_id": "11", "periodo_id": "11", "encerramento_id": "11", "endereco_id": "11"},
+    {"id": "12", "local_id": "1", "curso_id": "9", "turma_codigo": "06", "agenda_id": "12", "periodo_id": "12", "encerramento_id": "12", "endereco_id": "12"},
+    {"id": "13", "local_id": "1", "curso_id": "9", "turma_codigo": "07", "agenda_id": "13", "periodo_id": "13", "encerramento_id": "13", "endereco_id": "13"},
+    {"id": "14", "local_id": "1", "curso_id": "10", "turma_codigo": "12", "agenda_id": "14", "periodo_id": "14", "encerramento_id": "14", "endereco_id": "14"},
+    {"id": "15", "local_id": "1", "curso_id": "11", "turma_codigo": "14", "agenda_id": "15", "periodo_id": "15", "encerramento_id": "15", "endereco_id": "15"},
+    {"id": "16", "local_id": "1", "curso_id": "12", "turma_codigo": "03", "agenda_id": "16", "periodo_id": "16", "encerramento_id": "16", "endereco_id": "16"},
+    {"id": "17", "local_id": "1", "curso_id": "13", "turma_codigo": "05", "agenda_id": "17", "periodo_id": "17", "encerramento_id": "17", "endereco_id": "17"},
+    {"id": "18", "local_id": "1", "curso_id": "14", "turma_codigo": "12", "agenda_id": "18", "periodo_id": "18", "encerramento_id": "18", "endereco_id": "18"},
 ]
+
+SCHEDULE_OPTIONS = {
+    "1": {"dias_aula": "Segunda e Quarta", "horario": "10h até 12h"},
+    "2": {"dias_aula": "Segunda e Quarta", "horario": "10h até 12h"},
+    "3": {"dias_aula": "Segunda e Quarta", "horario": "10h até 12h"},
+    "4": {"dias_aula": "Segunda e Quarta", "horario": "13h até 15h"},
+    "5": {"dias_aula": "Segunda e Quarta", "horario": "13h até 15h"},
+    "6": {"dias_aula": "Terça e Quinta", "horario": "13h até 15h"},
+    "7": {"dias_aula": "Terça e Quinta", "horario": "16h até 18h"},
+    "8": {"dias_aula": "Segunda e Quarta", "horario": "13h até 15h"},
+    "9": {"dias_aula": "Segunda e Quarta", "horario": "16h até 18h"},
+    "10": {"dias_aula": "Segunda e Quarta", "horario": "16h até 18h"},
+    "11": {"dias_aula": "Terça e Quinta", "horario": "16h até 18h"},
+    "12": {"dias_aula": "Segunda e Quarta", "horario": "16h até 18h"},
+    "13": {"dias_aula": "Terça e Quinta", "horario": "10h até 12h"},
+    "14": {"dias_aula": "Terça e Quinta", "horario": "10h até 12h"},
+    "15": {"dias_aula": "Terça e Quinta", "horario": "10h até 12h"},
+    "16": {"dias_aula": "Terça e Quinta", "horario": "13h até 15h"},
+    "17": {"dias_aula": "Terça e Quinta", "horario": "13h até 15h"},
+    "18": {"dias_aula": "Terça e Quinta", "horario": "16h até 18h"},
+}
+
+START_DATE_OPTIONS = {
+    "1": "04/05/2026",
+    "2": "04/05/2026",
+    "3": "04/05/2026",
+    "4": "04/05/2026",
+    "5": "04/05/2026",
+    "6": "04/05/2026",
+    "7": "04/05/2026",
+    "8": "04/05/2026",
+    "9": "04/05/2026",
+    "10": "05/05/2026",
+    "11": "05/05/2026",
+    "12": "05/05/2026",
+    "13": "05/05/2026",
+    "14": "05/05/2026",
+    "15": "05/05/2026",
+    "16": "05/05/2026",
+    "17": "05/05/2026",
+    "18": "05/05/2026",
+}
+
+END_DATE_OPTIONS = {
+    "1": "03/06/2026",
+    "2": "03/06/2026",
+    "3": "03/06/2026",
+    "4": "03/06/2026",
+    "5": "03/06/2026",
+    "6": "03/06/2026",
+    "7": "03/06/2026",
+    "8": "03/06/2026",
+    "9": "03/06/2026",
+    "10": "04/06/2026",
+    "11": "04/06/2026",
+    "12": "04/06/2026",
+    "13": "04/06/2026",
+    "14": "04/06/2026",
+    "15": "04/06/2026",
+    "16": "04/06/2026",
+    "17": "04/06/2026",
+    "18": "04/06/2026",
+}
+
+ADDRESS_OPTIONS = {
+    "1": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "2": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "3": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "4": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "5": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "6": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "7": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "8": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "9": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "10": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "11": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "12": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "13": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "14": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "15": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "16": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "17": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+    "18": "Rua Joaquim Sarmento, nº 183, Guadalupe: 21660-370",
+}
+
+
+def build_course_options():
+    local_options_by_id = {option["id"]: option for option in LOCAL_OPTIONS}
+    course_catalog_by_id = {option["id"]: option for option in COURSE_CATALOG}
+    course_options = []
+
+    for turma_option in TURMA_OPTIONS:
+        local = local_options_by_id[turma_option["local_id"]]
+        course = course_catalog_by_id[turma_option["curso_id"]]
+        schedule = SCHEDULE_OPTIONS[turma_option["agenda_id"]]
+
+        course_options.append({
+            "id": turma_option["id"],
+            "local_id": turma_option["local_id"],
+            "curso_id": turma_option["curso_id"],
+            "local": local["nome"],
+            "curso": course["nome"],
+            "turma": f"{course['nome']} - TURMA {turma_option['turma_codigo']}",
+            "dias_aula": schedule["dias_aula"],
+            "horario": schedule["horario"],
+            "data_inicio": START_DATE_OPTIONS[turma_option["periodo_id"]],
+            "encerramento": END_DATE_OPTIONS[turma_option["encerramento_id"]],
+            "endereco_curso": ADDRESS_OPTIONS[turma_option["endereco_id"]],
+        })
+
+    return course_options
+
+
+COURSE_OPTIONS = build_course_options()
 
 LOCAL_OPTIONS_BY_ID = {option["id"]: option for option in LOCAL_OPTIONS}
 COURSE_CATALOG_BY_ID = {option["id"]: option for option in COURSE_CATALOG}
